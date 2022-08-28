@@ -40,7 +40,7 @@ public class UserController {
         return new UserEntity();
     }
 
-    @PostMapping("/random")
+    @GetMapping("/random")
     public ResponseEntity addRandomUserData() {
         UserEntity userEntity = new UserEntity();
         userEntity.setPassword(USERSERVICEMAINCLASS.getRandomString(20));
