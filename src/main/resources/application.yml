@@ -6,7 +6,7 @@ spring:
   application:
     name: USER-SERVICE
   datasource:
-    url: jdbc:h2:file:/data/demo
+    url: jdbc:h2:mem:microservices
     username: root
     password:
     driver-class-name: org.h2.Driver
