@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    url: jdbc:h2:file:/data/demo
+    username: root
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  h2:
+    console.enabled: true
