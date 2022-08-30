@@ -66,8 +66,9 @@ public class UserService {
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.setContentType(MediaType.APPLICATION_JSON);
             try {
-                ResponseEntity<UploadFileEntityDto> response =restTemplate.getForEntity(url,UploadFileEntityDto.class);
-                return factory.convertUserEntityToDto(foundedEntity.get(),response.getBody());
+//                ResponseEntity<UploadFileEntityDto> response =restTemplate.getForEntity(url,UploadFileEntityDto.class);
+                return factory.convertUserEntityToDto(foundedEntity.get());
+//                return factory.convertUserEntityToDto(foundedEntity.get(),response.getBody());
             } catch (Exception e) {
                 e.printStackTrace();
                 return null;
